@@ -26,3 +26,4 @@ app.get("/mcstatus", async (_req, res) => {
 
 const listen = Number(process.env.PORT || process.env.PORT0 || 8787);
 app.listen(listen, () => console.log("probe on " + listen));
+
