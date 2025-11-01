@@ -1,0 +1,10 @@
+{
+  "name": "nkx-mc-probe",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "minecraft-server-util": "^5.7.4"
+  },
+  "scripts": { "start": "node server.js" }
+}
