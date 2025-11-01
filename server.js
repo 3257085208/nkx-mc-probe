@@ -3,9 +3,7 @@ import { status } from "minecraft-server-util";
 
 const HOST = process.env.TARGET_HOST || "110.42.96.8";
 const PORT = Number(process.env.TARGET_PORT || "25565");
-
 const app = express();
-app.use((_,res,next)=>{res.setHeader("Access-Control-Allow-Origin","*");res.setHeader("Access-Control-Allow-Headers","*");next();});
 
 app.get("/mcstatus", async (_req, res) => {
   try {
